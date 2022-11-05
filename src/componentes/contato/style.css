@@ -1,0 +1,120 @@
+#session-contato{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #354392;
+    text-align: center;
+}
+#session-contato h1{
+    display: inline-block;
+    padding: 2%;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #1e285d;
+    background-color: #ffffff55;
+}
+.box-contato{
+    width: 100%;
+    padding: 5% 2%;
+    background-color: #ffffff55;
+    display: flex;
+    justify-content: space-around;
+}
+.box-contato > div{
+    width: calc(100% / 3);
+    max-width: 300px;
+    min-height: 325px;
+    border: 3px solid #373535 ;
+    box-shadow: 4px 3px 15px 2px #1e285d;
+    padding: 1%;
+    background-color: #ffffff60;
+    border-radius: 10px;
+}
+.box-contato .agenda{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-contato .agenda h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.box-contato .agenda p{
+    font-size: 15px;
+}
+.box-contato .agenda textarea{
+    height: 50%;
+    resize: none;
+    border-radius: 10px;
+    padding: 2%;
+    border: none;
+}
+.box-contato .agenda input{
+    padding: 2%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.box-contato .agenda button{
+    padding: 5px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #001F3B;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.box-contato .agenda button:hover{
+    background-color: #535c87;
+}
+.box-contato .contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-contato .contatos span{
+    font-size: 15px;
+    font-weight: 600;
+}
+.box-contato .contatos p{
+    margin: 20px 0;
+}
+.box-contato .local{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-contato .local h2{
+    margin: 10px 0;
+}
+.box-contato .local .localizacao{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #00f67b;
+    border-radius: 10px;
+    position: relative;
+}
+.box-contato .local #map{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+@media screen and (max-width: 578px){
+    #session-contato h1{
+        padding: 4%;
+    }
+    .box-contato{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-contato > div{
+        width: 100%;
+        padding: 3%;
+        max-width: 275px;
+        margin: 10px 0;
+    }
+}

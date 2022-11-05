@@ -1,0 +1,106 @@
+#session3{
+    padding: 100px 0;
+    background-image: url('./assets/fundo.png');
+    background-position: center;
+    background-size: auto 100%;
+}
+.fundo2{
+    width: 95%;
+    margin: 50px auto;
+    height: 250px;
+    background-color: #D9D9D9;
+}
+.conteudo{
+    width: 85%;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: aqua; */
+}
+.quality{
+    width: 40%;
+    height: 350px;
+    max-width: 400px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1f1f1f;
+    border: 10px solid #d9d9d9;
+}
+.quality h2{
+    font-size: 35px;
+    color: #3c2bdc;
+}
+.quality p{
+    color: #cecece;
+    text-align: justify;
+}
+.quality a{
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 5px 15px;
+    position: relative;
+    color: #006DF0;
+}
+.quality a>span{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #d9d9d94c;
+    border-radius: 5px;
+    transition-duration: 0.6s;
+    
+}
+.quality a:hover span{
+    height: 100%;
+}
+.slide{
+    width: 55%;
+    height: 350px;
+    /* background-color: red; */
+    /* border: 10px solid #d9d9d9; */
+    overflow-x: hidden;
+}
+.box-slide{
+    width: calc(100% * 5);
+    height: 100%;
+    display: flex;
+}
+.box-slide div{
+    width: calc(100% / 5);
+    height: 100%;
+    /* background-color: #D9D9D9; */
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 768px){
+    .fundo2{
+        display: none;
+    }
+    .conteudo{
+        width: 100%;
+        position: static;
+        transform: translate(0,0);
+        flex-direction: column;
+        align-items: center;
+    }
+    .quality{
+        width: 100%;
+    }
+    .slide{
+        width: 100%;
+    }
+}
