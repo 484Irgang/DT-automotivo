@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
      crossorigin=""/>
+    
+    <title>Teste React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./src/assets/JQuery.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
     crossorigin=""></script>
-    <script src="./src/assets/JQuery.js"></script>
     <script>
       $(function(){
         var map = L.map('map').setView([-27.128019,-48.612756], 14);
@@ -25,10 +31,5 @@
         
       });
     </script>
-    <title>Teste React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
